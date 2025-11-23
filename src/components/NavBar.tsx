@@ -1,4 +1,4 @@
-import { Bleed, Flex, HStack } from "@chakra-ui/react";
+import { Bleed, Flex } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 
 type NavItem = {
@@ -78,8 +78,8 @@ function NavBar() {
             </div>
           </a>
 
-          {/* Links desktop */}
-          <HStack className="hidden gap-4 md:flex">
+          {/* Links desktop (agora com div em vez de HStack) */}
+          <div className="hidden md:flex gap-4">
             {NAV_ITEMS.map((item) => {
               const isActive = activeId === item.id;
               return (
@@ -100,7 +100,7 @@ function NavBar() {
                 </a>
               );
             })}
-          </HStack>
+          </div>
 
           {/* Botão mobile */}
           <button
@@ -108,7 +108,7 @@ function NavBar() {
             onClick={() => setIsOpen((prev) => !prev)}
             className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white/80 px-3 py-2 text-xs font-medium text-[#1F3A5F] shadow-sm hover:bg-[#1F3A5F] hover:text-white transition md:hidden"
           >
-            <span className="sr-only">Abrir navegação</span>
+            <span className="sr-only">Toggle navigation</span>
             <span className="text-base">{isOpen ? "✕" : "☰"}</span>
           </button>
         </div>

@@ -1,5 +1,5 @@
 import { Link } from "@chakra-ui/react";
-import PublicationsSection from "../components/PublicationSection";
+import PublicationsSection from "../components/section/PublicationSection";
 import React from "react";
 import { useState } from "react";
 
@@ -48,50 +48,6 @@ const MainPage: React.FC = () => {
 
   return (
     <main className="relative min-h-screen bg-[#f3f3f3] text-slate-900">
-      {/* === BACKGROUND SHAPES === */}
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        {/* Cluster principal (topo / direita – atrás do hero) */}
-        <img
-          src="/shape1.png"
-          alt=""
-          className="absolute -top-40 -right-56 w-[22rem] md:w-[26rem] lg:w-[30rem] opacity-30"
-        />
-        <img
-          src="/shape2.png"
-          alt=""
-          className="absolute -top-24 -right-16 w-[18rem] md:w-[22rem] lg:w-[26rem] opacity-60"
-        />
-        <img
-          src="/shape3.png"
-          alt=""
-          className="absolute top-24 right-24 w-[16rem] md:w-[20rem] lg:w-[22rem] opacity-40"
-        />
-
-        {/* Cluster secundário (meio / esquerda) */}
-        <img
-          src="/shape4.png"
-          alt=""
-          className="absolute top-1/3 -left-40 w-[20rem] md:w-[24rem] lg:w-[28rem] opacity-25"
-        />
-        <img
-          src="/shape5.png"
-          alt=""
-          className="absolute top-[42%] -left-8 w-[16rem] md:w-[20rem] lg:w-[24rem] opacity-35"
-        />
-
-        {/* Cluster inferior (fechando a dobra) */}
-        <img
-          src="/shape2.png"
-          alt=""
-          className="absolute -bottom-40 left-1/2 w-[20rem] md:w-[24rem] lg:w-[28rem] -translate-x-1/2 opacity-30"
-        />
-        <img
-          src="/shape1.png"
-          alt=""
-          className="absolute -bottom-32 left-[55%] w-[18rem] md:w-[22rem] lg:w-[26rem] -translate-x-1/2 opacity-40"
-        />
-      </div>
-
       {/* CONTEÚDO */}
       <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
         {/* ========== HERO / INÍCIO ========== */}
@@ -144,7 +100,7 @@ const MainPage: React.FC = () => {
               <div className="relative">
                 <div className="absolute -inset-1 rounded-full bg-[#355C85]/20 blur-md" />
                 <img
-                  src="/profile.jpg"
+                  src="/Gabriel.jpg"
                   alt="Portrait of Gabriel Teixeira"
                   className="relative z-10 h-48 w-48 md:h-60 md:w-60 rounded-full object-cover border-4 border-white shadow-lg shadow-slate-500/40"
                 />
@@ -183,25 +139,25 @@ const MainPage: React.FC = () => {
               </h3>
               <dl className="space-y-2 text-sm text-slate-700">
                 <div className="flex justify-between gap-4">
-                  <dt className="font-medium text-slate-600">Institution</dt>
+                  <dt className="font-medium text-slate-600">Institution:</dt>
                   <dd className="text-right">
                     Brazilian Center for Research in Physics (CBPF)
                   </dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt className="font-medium text-slate-600">Areas</dt>
+                  <dt className="font-medium text-slate-600">Areas:</dt>
                   <dd className="text-right">
                     Astrophysics, Cosmology, Machine Learning
                   </dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt className="font-medium text-slate-600">Keywords</dt>
+                  <dt className="font-medium text-slate-600">Keywords:</dt>
                   <dd className="text-right">
                     Transients, Photometric Redshifts, Dark Sirens
                   </dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt className="font-medium text-slate-600">Location</dt>
+                  <dt className="font-medium text-slate-600">Location:</dt>
                   <dd className="text-right">Rio de Janeiro, Brazil</dd>
                 </div>
               </dl>

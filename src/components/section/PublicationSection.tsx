@@ -1,7 +1,7 @@
 // src/components/sections/PublicationsSection.tsx
 
 import React from "react";
-import { publications, type Publication } from "../data/publications";
+import { publications, type Publication } from "../../data/publications";
 
 const typeColorMap: Record<Publication["type"], string> = {
   "First author": "text-[#355C85]",
