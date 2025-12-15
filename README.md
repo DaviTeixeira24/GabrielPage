@@ -21,8 +21,8 @@ O projeto é uma landing page com foco em Astrofísica, Cosmologia e aplicaçõe
 
 A navegação é feita em uma única página, com uma *navbar* fixa que faz scroll suave para cada seção:
 
-- `#inicio` – Hero / Begin  
-- `#sobre` – Sobre / About  
+- `#inicio` – Begin  
+- `#sobre` – About  
 - `#pesquisa` – Research  
 - `#publicacoes` – Publications  
 - `#palestras` – Talks  
